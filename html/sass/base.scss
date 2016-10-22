@@ -44,9 +44,9 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-
     font-size: 100%;
     vertical-align: baseline;
+
 }
 html, body{
     line-height: 1;
@@ -72,6 +72,9 @@ a img{
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block;
+}
+i{
+    font-style: normal;
 }
 a{
 
@@ -137,7 +140,6 @@ a{
                         width: 15px;
                         height: 20px;
                         display:inline-block;
-                        background: url("/html/images/head/sc2016img.png") no-repeat 0 0;
                         vertical-align: middle;
                         padding-right: 2px;
                    } 
@@ -318,7 +320,7 @@ a{
     border: {
         bottom:2px;
         style: solid;
-        color: #60a2df;
+        color: #33b5ff;
     }
     .top-nav{
         display:block;
