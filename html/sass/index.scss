@@ -1,3 +1,4 @@
+
 @import "layout/variables", "layout/mixin";
 
 //左侧菜单栏开始
@@ -14,12 +15,36 @@
     font-family: $main-sec-ff;
     .sidebar-ul{
       width: 228px;
-
+      margin-top: -1px;
       .sidebar-list{
         position: relative;
-
         cursor:pointer;
-
+        &:hover{
+          background-color: #FFF;
+          border:{
+            left:1px;
+            style:solid;
+            color:#33b5ff;
+          }
+          .sidebar-menu-list{
+            .nav-icon{
+              background-color: #33b5ff;
+            }
+            h2{
+              color:#33b5ff;
+            }
+            .samll-menu{
+              
+              a{
+                color:#33b5ff;
+              }
+            }
+            
+          }
+          .house-elec-pw{
+            display:block;
+          }
+        }
         .sidebar-menu-list{
           width: 202px;
           margin: 0 auto;
@@ -74,14 +99,14 @@
         .menu-last{
           border-bottom: 0 none;
         }
-        //家用电器弹窗
 
+        //家用电器弹窗
         .house-elec-pw{
           width: 670px;
-          height: 430px;
+          height: 434px;
           position: absolute;
           top: 0;
-          left: 228px;
+          left: 227px;
           background-color: #fff;
           z-index: 100;
           border: {
@@ -90,14 +115,21 @@
             style: solid;
             color: #33b5ff;
           }
+          // display:none;
+          .house-mt{
+            width: 620px;
+            margin: 15px auto 0;
+            overflow: hidden;
+          }
           .large-house{
-            width: 588px;
-            margin: 18px auto 16px;
-            overflow:hidden;
+            height:auto;
+            margin-bottom: 10px;
             span{
+              width: 73px;
               float: left;
-              display:block;
-              padding: 0 10px 0 15px;
+              display:inline-block;
+              margin-right: 10px;
+              text-align: right;
               font: {
                 size: 12px;
                 weight: bold;
@@ -105,13 +137,45 @@
               a{
                 padding-left: 5px;
               }
+              @include box-size
             }
             .large-house-ul{
+              width: 515px;
               float: left;
+              border:{
+                bottom:1px;
+                style:solid;
+                color:#ededed;
+              }
+              margin-bottom: 10px;
+
               .large-house-list{
-                float: left;
+
+                .house-boderl{
+                  display: inline-block;
+                  border:{
+                    left: 1px;
+                    style:solid;
+                    color: #e1e1e1;
+                  }
+                  padding-left: 14px;
+                  margin:{
+                    right: 10px;
+                    bottom: 10px;
+                  }
+                  font-size: 12px;
+
+                }
+                .boder-no{
+                  border-left: 0;
+                }
               }
             }
+            .border-bottom{
+              border-bottom: 0 none;
+              margin-bottom: 0;
+            }
+
           }
         }
 
