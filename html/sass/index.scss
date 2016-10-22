@@ -183,7 +183,7 @@
         }
         //家用电器弹窗结束
 
-        //礼品箱包弹窗开始
+        //服饰鞋包弹窗开始
         .gift-bags-pw{
           width: 670px;
           height: 469px;
@@ -261,7 +261,7 @@
 
           }
         }
-        //礼品箱包弹窗结束
+        //服饰鞋包弹窗结束
 
         //个护美妆弹窗开始
         .beauty-care-pw{
@@ -278,7 +278,7 @@
             style: solid;
             color: #33b5ff;
           }
-          //display:none;
+          display:none;
           .beauty-mt{
             width: 620px;
             margin: 15px auto 0;
@@ -1436,8 +1436,8 @@
 }
 /*手机通讯部分样式结束*/
 
-/*电脑数码部分样式开始*/
-.computer-digital{
+/*百货食品部分样式开始*/
+.store-food{
   width: 100%;
   height:430px;
   overflow: hidden;
@@ -1445,7 +1445,7 @@
   margin: {
     top:30px;
   }
-  .computer-content{
+  .store-content{
     height: $height;
     float: left;
     overflow: hidden;
@@ -1456,7 +1456,7 @@
       background-color: #815ce7;
       text-align: center;
       @include rounded(34px);
-      .computer-top{
+      .store-top{
         color: #fefefe;
         font:{
           size:18px;
@@ -1465,11 +1465,11 @@
       }
     }
     //}
-    .computer-let{
+    .store-let{
       width: $width;
       background-color: #f5f1ff;
 
-      .computer-line{
+      .store-line{
         $width:197px;
         width:$width;
         margin: 0 auto;
@@ -1484,7 +1484,7 @@
         &:last-child{
           border-bottom:0 ;
         }
-        .computer-big{
+        .store-big{
           line-height: 32px;
           color: #333;
           font:{
@@ -1492,7 +1492,7 @@
             weight:bold;
           }
         }
-        .computer-list{
+        .store-list{
           width: 190px;
           line-height: 22px;
           $fontsize:14px;
@@ -1503,11 +1503,11 @@
             &:hover{
               color: #815ce7 !important;
             }
-            &.computer-jia{
+            &.store-jia{
               padding-right: 18px;
 
             }
-            &.computer-operators{
+            &.store-operators{
               padding-right: 15px;
 
             }
@@ -1524,17 +1524,17 @@
   }
 
   //右边内容部分
-  .computer-right{
+  .store-right{
     border: {
       top: 1px;
       style: solid;
       color: #815ce7;
     }
     display: inline-block;
-    .computer-same{
+    .store-same{
       float: left;
     }
-    .computer-rpic{
+    .store-rpic{
 
         margin-top: 10px;
         .xiang{
@@ -1552,7 +1552,7 @@
             img{
               height: 118px;
               display: inline-block;
-              &.computer-pic{
+              &.store-pic{
                 margin-top: 28px;
                 height: auto;
               }
@@ -1632,19 +1632,19 @@
       }
 
   }
-  .computer-brand{
+  .store-brand{
     width:$width;
     a{
       display: inline-block;
       margin:{
         bottom:15px;
       }
-      &.computer-img01{
+      &.store-img01{
         width:$width;
         height: 184px;
         display: inline-block;
       }
-      &.computer-img02{
+      &.store-img02{
         width:$width;
         height: 206px;
         display: inline-block;
@@ -1652,7 +1652,7 @@
     }
   }
 }
-/*电脑数码部分样式结束*/
+/*百货食品部分样式结束*/
 
 /*运动健身部分样式开始*/
 .sport-fitness{
@@ -1865,14 +1865,9 @@
       margin:{
         bottom:15px;
       }
-      &.computer-img01{
+      &.sport-img01{
         width:$width;
         height: 184px;
-        display: inline-block;
-      }
-      &.computer-img02{
-        width:$width;
-        height: 206px;
         display: inline-block;
       }
     }
