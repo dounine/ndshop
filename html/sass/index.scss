@@ -55,7 +55,7 @@
             color: $white;
           }
           padding:{
-            top:10px;
+            top:9px;
           }
           color: $white;
           h2{
@@ -71,7 +71,7 @@
             }
           }
           .samll-menu{
-            line-height: 17px;
+            line-height: 18px;
             padding: 9px 28px 9px 16px;
 
             a{
@@ -100,7 +100,7 @@
           border-bottom: 0 none;
         }
 
-        //家用电器弹窗
+        //家用电器弹窗开始
         .house-elec-pw{
           width: 670px;
           height: 434px;
@@ -115,7 +115,7 @@
             style: solid;
             color: #33b5ff;
           }
-          // display:none;
+          display:none;
           .house-mt{
             width: 620px;
             margin: 15px auto 0;
@@ -178,7 +178,87 @@
 
           }
         }
+        //家用电器弹窗结束
 
+        //礼品箱包弹窗开始
+        .gift-bags-pw{
+          width: 670px;
+          height: 434px;
+          position: absolute;
+          top: 0;
+          left: 227px;
+          background-color: #fff;
+          z-index: 100;
+          border: {
+            right:2px;
+            bottom: 1px;
+            style: solid;
+            color: #33b5ff;
+          }
+          display:none;
+          .gift-mt{
+            width: 620px;
+            margin: 15px auto 0;
+            overflow: hidden;
+          }
+          .large-bags{
+            height:auto;
+            margin-bottom: 10px;
+            span{
+              width: 73px;
+              float: left;
+              display:inline-block;
+              margin-right: 10px;
+              text-align: right;
+              font: {
+                size: 12px;
+                weight: bold;
+              }
+              a{
+                padding-left: 5px;
+              }
+              @include box-size
+            }
+            .large-bags-ul{
+              width: 515px;
+              float: left;
+              border:{
+                bottom:1px;
+                style:solid;
+                color:#ededed;
+              }
+              margin-bottom: 10px;
+
+              .large-bags-list{
+
+                .gift-boderl{
+                  display: inline-block;
+                  border:{
+                    left: 1px;
+                    style:solid;
+                    color: #e1e1e1;
+                  }
+                  padding-left: 14px;
+                  margin:{
+                    right: 10px;
+                    bottom: 10px;
+                  }
+                  font-size: 12px;
+
+                }
+                .boder-no{
+                  border-left: 0;
+                }
+              }
+            }
+            .border-bottom{
+              border-bottom: 0 none;
+              margin-bottom: 0;
+            }
+
+          }
+        }
+        //礼品箱包弹窗结束
       }
     }
   }
