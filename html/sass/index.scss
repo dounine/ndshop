@@ -26,6 +26,9 @@
             style:solid;
             color:#33b5ff;
           }
+          &:last-child{
+            border-bottom:1px solid #33b5ff;
+          }
           .sidebar-menu-list{
             .nav-icon{
               background-color: #33b5ff;
@@ -105,10 +108,10 @@
           width: 670px;
           height: 434px;
           position: absolute;
-          top: 0;
+          top: 1px;
           left: 227px;
           background-color: #fff;
-          z-index: 100;
+          z-index: 101;
           border: {
             right:2px;
             bottom: 1px;
@@ -183,9 +186,9 @@
         //礼品箱包弹窗开始
         .gift-bags-pw{
           width: 670px;
-          height: 434px;
+          height: 469px;
           position: absolute;
-          top: 0;
+          top: -80px;
           left: 227px;
           background-color: #fff;
           z-index: 100;
@@ -220,7 +223,7 @@
               @include box-size
             }
             .large-bags-ul{
-              width: 515px;
+              width: 524px;
               float: left;
               border:{
                 bottom:1px;
@@ -259,6 +262,86 @@
           }
         }
         //礼品箱包弹窗结束
+
+        //个护美妆弹窗开始
+        .beauty-care-pw{
+          width: 670px;
+          height: 316px;
+          position: absolute;
+          top: -161px;
+          left: 227px;
+          background-color: #fff;
+          z-index: 100;
+          border: {
+            right:2px;
+            bottom: 1px;
+            style: solid;
+            color: #33b5ff;
+          }
+          //display:none;
+          .beauty-mt{
+            width: 620px;
+            margin: 15px auto 0;
+            overflow: hidden;
+          }
+          .large-beauty{
+            height:auto;
+            margin-bottom: 10px;
+            span{
+              width: 73px;
+              float: left;
+              display:inline-block;
+              margin-right: 10px;
+              text-align: right;
+              font: {
+                size: 12px;
+                weight: bold;
+              }
+              a{
+                padding-left: 5px;
+              }
+              @include box-size
+            }
+            .large-beauty-ul{
+              width: 514px;
+              float: left;
+              border:{
+                bottom:1px;
+                style:solid;
+                color:#ededed;
+              }
+              margin-bottom: 10px;
+
+              .large-beauty-list{
+
+                .beauty-boderl{
+                  display: inline-block;
+                  border:{
+                    left: 1px;
+                    style:solid;
+                    color: #e1e1e1;
+                  }
+                  padding-left: 14px;
+                  margin:{
+                    right: 10px;
+                    bottom: 10px;
+                  }
+                  font-size: 12px;
+
+                }
+                .boder-no{
+                  border-left: 0;
+                }
+              }
+            }
+            .border-bottom{
+              border-bottom: 0 none;
+              margin-bottom: 0;
+            }
+
+          }
+        }
+        //个护美妆弹窗结束
       }
     }
   }
@@ -292,14 +375,13 @@
     left: 50%;
     bottom: 20px;
     margin-left:-56px;
-    z-index: 200;
+    z-index: 60;
     li{
       width: 8px;
       height: 8px;
       background-color: #888;
       float: left;
       border-radius:50%;
-      z-index:400;
       cursor:pointer;
       margin: 0 8px;
       &.curent{
@@ -1032,12 +1114,6 @@
           }
             &.beauty-jia{
               padding-right: 15px;
-              // &:nth-of-type(6){
-              //   padding-right: 20px;
-              // }
-              // &:nth-of-type(7){
-              //   padding-right: 28px;
-              // }
             }
             &.body-elec{
               padding-right: 15px;

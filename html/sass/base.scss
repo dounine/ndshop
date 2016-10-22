@@ -398,7 +398,7 @@ footer{
 .service-center{
     width: 100%;
     height: auto;
-    clear:both;
+    overflow: hidden;
     font-family:$main-sec-ff;
     dl{
         float: left;
