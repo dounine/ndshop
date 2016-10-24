@@ -1,5 +1,5 @@
 # ndshop
-ntshop for 90 team
+ndshop for 90 team, for only opensource shop
 
 # projects constitute
 
